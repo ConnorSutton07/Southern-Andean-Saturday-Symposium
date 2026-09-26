@@ -1,0 +1,368 @@
+/* =========================================================
+   Conference Website
+   Edit the HTML content first; this stylesheet controls the look.
+   ========================================================= */
+
+:root {
+  --ink: #24231f;
+  --muted: #6d6a61;
+  --paper: rgb(244, 239, 223);
+  /*--white: rgb(156, 169, 142);*/
+  --white: rgb(244, 239, 223);
+  --accent: #7a4f2a;
+  --accent-dark: #59391f;
+  --border: #ddd8cc;
+  --dark: rgba(214, 210, 180, 0.96);
+  --max-width: 1080px;
+  --narrow-width: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Garamond, serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--max-width));
+  margin: 0 auto;
+}
+
+.narrow {
+  max-width: var(--narrow-width);
+}
+
+/* Hero */
+
+.hero {
+  padding: 110px 0 100px;
+  color: var(--white);
+  background:
+    linear-gradient(rgba(40, 40, 34, 0.88), rgba(40, 40, 34, 0.88)),
+    url("images/hero.jpg") center / cover;
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 10px;
+  color: #b99a77;
+  font-family: Garamond, serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.hero-meta {
+  margin: 25px 0 20px;
+  font-family: Garamond, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hero-description {
+  max-width: 650px;
+  margin: 0 0 35px;
+  color: #e8e3d8;
+  font-size: 1.15rem;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  padding: 12px 21px;
+  border: 1px solid transparent;
+  font-family: Garamond, serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+.button-primary {
+  color: white;
+  background: var(--accent);
+}
+
+.button-primary:hover {
+  color: white;
+  background: var(--accent-dark);
+}
+
+/* Navigation */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+  background: rgba(214, 210, 180, 0.96);
+  backdrop-filter: blur(8px);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 12px 0;
+}
+
+.nav a {
+  color: var(--ink);
+  font-family: Garamond, serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* Sections */
+
+.section {
+  padding: 75px 0;
+}
+
+.section-alt {
+  background: var(--white);
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.section p {
+  margin-top: 0;
+}
+
+.intro {
+  max-width: 720px;
+}
+
+/* Callout */
+
+.callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 35px 0 20px;
+  padding: 25px 28px;
+  border-left: 4px solid var(--accent);
+  background: var(--paper);
+}
+
+.callout div {
+  display: flex;
+  flex-direction: column;
+}
+
+.callout strong {
+  font-family: Garamond, serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.callout span {
+  font-size: 1.1rem;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  background: var(--white);
+}
+
+.section-alt .card {
+  background: var(--paper);
+}
+
+.card h3,
+.food-list h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.card a {
+  font-family: Garamond, serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Food */
+
+.food-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  border-top: 1px solid var(--border);
+}
+
+.food-list > div {
+  padding: 24px 25px 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.food-list > div:nth-child(even) {
+  padding-left: 25px;
+  border-left: 1px solid var(--border);
+}
+
+.food-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Contact */
+
+.section-dark {
+  color: var(--white);
+  background: var(--dark);
+}
+
+.section-dark h2 {
+  color: black;
+}
+
+.section-dark p {
+  color: black;
+}
+
+.email-link {
+  color: black; 
+  font-family: Garamond, serif;
+  font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+  color: #aaa79d;
+  background: #1e1e1a;
+  font-family: Garamond, serif;
+  font-size: 0.75rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+}
+
+/* Mobile */
+
+@media (max-width: 750px) {
+  body {
+    font-size: 17px;
+  }
+
+  .hero {
+    padding: 75px 0 70px;
+  }
+
+  .nav {
+    position: static;
+  }
+
+  .nav-inner {
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    justify-content: flex-start;
+    padding: 12px 20px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .callout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .food-list {
+    grid-template-columns: 1fr;
+  }
+
+  .food-list > div,
+  .food-list > div:nth-child(even) {
+    padding: 20px 0;
+    border-left: 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
