@@ -123,6 +123,7 @@ a:hover {
 .button-primary {
   color: white;
   background: var(--accent);
+  justify-content: center;
 }
 
 .button-primary:hover {
