@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SASS 2026 Program</title>
+<style>
+  /* Colors and type match the SASS 2026 website (style.css) */
+  :root {
+    --ink: #24231f;
+    --muted: #6d6a61;
+    --paper: rgb(244, 239, 223);
+    --accent: #7a4f2a;
+    --accent-dark: #59391f;
+    --border: #ddd8cc;
+    --dark: rgba(214, 210, 180, 0.96);
+    --label: #b99a77;
+  }
+  body {
+    font-family: Garamond, serif;
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--ink);
+    background: var(--paper);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 75px;
+  }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent-dark); }
+  h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; letter-spacing: -0.025em; line-height: 1.1; margin: 1.5rem 0 1.25rem; }
+  h2 { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 3rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 1.25rem; font-weight: 400; line-height: 1.25; margin: 2rem 0 0.5rem; }
+  .meta { margin: 0 0 1.5rem; font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0 2rem; border-top: 1px solid var(--border); }
+  td { padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  td:first-child { white-space: nowrap; width: 7.5rem; color: var(--muted); font-size: 0.95rem; }
+  tr.session td { background: var(--dark); font-weight: 700; letter-spacing: 0.02em; padding-top: 0.7rem; }
+  .authors { font-style: italic; color: var(--muted); font-size: 0.95rem; }
+  .byline { margin: 0 0 0.75rem; color: var(--muted); font-size: 0.95rem; }
+  .byline strong { color: var(--ink); }
+  hr { border: none; border-top: 4px solid var(--accent); width: 60px; margin: 3rem 0; }
+  @media (max-width: 750px) {
+    body { font-size: 17px; }
+    td:first-child { width: auto; }
+  }
+  @media print {
+    body { margin: 0; max-width: none; padding: 0; }
+    h3 { break-after: avoid; }
+    tr { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>SASS 2026: Symposium Program</h1>
+
+<p class="meta">Saturday, November 14, 2026<br>268 Garland Hall, Vanderbilt University</p>
+
+<table>
+  <tr><td>8:30–9:00</td><td><em>Coffee and pastries</em></td></tr>
+  <tr><td>9:00–9:15</td><td><em>Welcoming remarks</em></td></tr>
+  <tr class="session"><td></td><td>Session 1: Isotopic Baselines and Life Histories</td></tr>
+  <tr><td>9:15–9:45</td><td>Get in the Water: Examining Oxygen and Strontium Isotopic Water Source Variation Across the Chicama, Moche, and Virú River Valleys on the North Coast of Peru<br><span class="authors">Maria L. Sellers, Sophia M. Lara, George Kamenov, Jason Curtis</span></td></tr>
+  <tr><td>9:45–10:15</td><td>Establishing an Ecuadorian Isoscape: The Importance of Baseline Strontium Data in a Volcanic Landscape<br><span class="authors">Maria Ordonez, Sara Juengst</span></td></tr>
+  <tr><td>10:15–10:45</td><td>Beyond the Category of Victim: A Multi-Tissue Isotopic Approach to the Life Histories of Women Sacrificed at Pampa La Cruz, Huanchaco, Peru<br><span class="authors">Sophia M. Lara, John Krigbaum, Gabriel Prieto</span></td></tr>
+  <tr><td>10:45–11:00</td><td><em>Coffee break</em></td></tr>
+  <tr class="session"><td></td><td>Session 2: Persons, Places, and Place Beings</td></tr>
+  <tr><td>11:00–11:30</td><td>Nourished Bodies and Extended Commensality: Ritual Consumption, Offerings and Mobility in Ancash, Peru<br><span class="authors">Rebecca Bria, Kalei Oliver, and Erick Casanova Vasquez</span></td></tr>
+  <tr><td>11:30–12:00</td><td>Un-Packing the Kañari Cabezas-Clavas<br><span class="authors">Jessica Christie and Josefina Vásquez Pazmiño</span></td></tr>
+  <tr><td>12:00–12:30</td><td>Community, Conversion, and Cotopaxi: Religious Transformations in Mulalo, Ecuador<br><span class="authors">Scotti M. Norman, Sara Juengst</span></td></tr>
+  <tr><td>12:30–2:00</td><td><em>Lunch</em></td></tr>
+  <tr class="session"><td></td><td>Session 3: Becoming Coastal: Maritime Foundations and Monumental Beginnings</td></tr>
+  <tr><td>2:00–2:30</td><td>Historically Contingent Ways of Becoming Coastal: Longotoma (North-Central Chile 32°24’ S) among the Andean Coastal Trajectories<br><span class="authors">Daniel Hernández Castillo</span></td></tr>
+  <tr><td>2:30–3:00</td><td>What Are Radiocarbon Dates Proxies For? MFAC and Dates-as-Data on the Peruvian Coast<br><span class="authors">Daniel A. Contreras, Benjamin R. Vining, and Augusto Bazán</span></td></tr>
+  <tr><td>3:00–3:15</td><td><em>Coffee break</em></td></tr>
+  <tr><td>3:15–3:45</td><td>Unveiling San Jacinto: The Most Monumental U-Shaped Ritual Complex of Peru’s Central Coast (Second–First Millennium BC)<br><span class="authors">Christian Cancho</span></td></tr>
+  <tr><td>3:45–4:15</td><td>Space, Time, and Form at the Moche Center of Dos Cabezas: Initial Results of a New Project<br><span class="authors">Connor Sutton, Jean Pool Nieves Cordova</span></td></tr>
+  <tr><td>4:15–5:15</td><td><strong>Keynote:</strong> Brian Billman (University of North Carolina at Chapel Hill)</td></tr>
+  <tr><td>5:15</td><td><em>Close</em></td></tr>
+</table>
+
+<hr>
+
+<h1>Abstracts</h1>
+
+<h2>Session 1: Isotopic Baselines and Life Histories</h2>
+
+<h3>9:15–9:45 · Get in the Water: Examining Oxygen and Strontium Isotopic Water Source Variation Across the Chicama, Moche, and Virú River Valleys on the North Coast of Peru</h3>
+<p class="byline"><strong>Author(s):</strong> Maria L. Sellers¹, Sophia M. Lara¹, George Kamenov², Jason Curtis² (¹Department of Anthropology, ²Department of Geological Sciences, University of Florida)<br>
+<strong>Contact:</strong> <a href="mailto:mlocke.sellers@ufl.edu">mlocke.sellers@ufl.edu</a></p>
+<p>Bioarchaeological investigations of ancient mobility and migration rely on robust isotopic baselines to distinguish between local and non-local individuals in a skeletal population and determine the possible areas of provenience for non-locals. Several meta-analyses and predictive models have produced isoscapes for the Peruvian Andes to support these investigations, but these draw heavily on sampling in the central and southern regions, leaving baselines for the north coast less developed. To help fill this gap, we conducted an exploratory water sampling survey of the Chicama, Moche, and Virú river valleys in July 2026 to provide additional baseline data for strontium (87Sr/86Sr) and oxygen (δ18O) on the north coast. We sampled each river and two canals at multiple elevations, from the coast into the yungas region where public access allowed. Beyond contributing new baseline datapoints to the existing body of literature, these samples were collected prior to the rains of the mega El Niño anticipated this 2026-2027 austral summer, providing a rare pre-event reference. We plan to resample these same sites in summer 2027 to assess how mega El Niño events may impact the bioavailable strontium and oxygen signatures in the region, with implications for interpreting mobility in both modern and ancient contexts.</p>
+
+<h3>9:45–10:15 · Establishing an Ecuadorian Isoscape: The Importance of Baseline Strontium Data in a Volcanic Landscape</h3>
+<p class="byline"><strong>Author(s):</strong> Maria Ordonez, Sara Juengst<br>
+<strong>Contact:</strong> <a href="mailto:mpordonez@usfq.edu.ec">mpordonez@usfq.edu.ec</a></p>
+<p>Strontium isotopes (87Sr/86Sr) have been used worldwide to track migrations and identify non-local individuals in the past. In South America, these studies often use comparative baseline maps, or isoscapes, established by samples from archaeological fauna and geologic formations. However, baseline research has focused on coastal Peru and the Central and South Andean Highlands. Currently, no comparable isoscape exists for Ecuador. Thus, scholars approximate baselines from predictive models and geologic studies, which may not accurately reflect the biologically available strontium in archaeological samples. This study tested the accuracy of predictive archaeological and geologic models for Ecuadorian strontium, and proposes alternatives for constructing isoscapes for the Ecuadorian Amazon.</p>
+
+<h3>10:15–10:45 · Beyond the Category of Victim: A Multi-Tissue Isotopic Approach to the Life Histories of Women Sacrificed at Pampa La Cruz, Huanchaco, Peru</h3>
+<p class="byline"><strong>Author(s):</strong> Sophia M. Lara, John Krigbaum, Gabriel Prieto<br>
+<strong>Contact:</strong> <a href="mailto:sophialara@ufl.edu">sophialara@ufl.edu</a></p>
+<p>The proposed project examines how imperial power shaped the lived experiences of adult females sacrificed during Event 3 (ca. A.D. 1220–1300) at Pampa La Cruz, a major Chimú sacrificial site on Peru’s north coast. Despite their presence in this intensified episode of sacrifice during a period of Chimú territorial expansion, adult females remain largely understudied relative to children and camelids excavated from the site. Using integrated multi-tissue stable and radiogenic isotope analyses of teeth, bone, and hair from 19 individuals, this study adopts an isobiographical approach to reconstruct diet and mobility across the life course, evaluating whether these women shared common origins or divergent pathways into the sacrificial context. By situating sacrifice within the longer embodied experiences of diet and mobility, this research aims to move beyond the moment of sacrifice to examine who these individuals were, how broader structures of imperial power shaped their lives, and how their lives may inform interpretations of their selection for sacrifice amid imperial strategies of territorial expansion.</p>
+
+<h2>Session 2: Persons, Places, and Place Beings</h2>
+
+<h3>11:00–11:30 · Nourished Bodies and Extended Commensality: Ritual Consumption, Offerings and Mobility in Ancash, Peru</h3>
+<p class="byline"><strong>Author(s):</strong> Rebecca Bria, Kalei Oliver, and Erick Casanova Vasquez<br>
+<strong>Contact:</strong> <a href="mailto:rebecca.bria@utsa.edu">rebecca.bria@utsa.edu</a></p>
+<p>Ritual consumption and offering are enduring Andean practices through which people relate to non-human beings, including constructed place-persons. Archaeological work increasingly recognizes such place-persons in pre-Inka contexts but casts them mainly as recipients of offerings, underplaying the shared consumption that sustained people’s relationships with them. Using two excavated ritual structures with distinct histories in Ancash, Peru—the Perolcoto mound in Hualcayán (2400–1 BCE) and the Usacorral platform in Yuco (1–1450 CE)—we explore extended commensality, a framework for tracing how people draw non-human beings into community through the co-occurrence of consumption debris and offerings of non-consumable, non-local materials.</p>
+
+<h3>11:30–12:00 · Un-Packing the Kañari Cabezas-Clavas</h3>
+<p class="byline"><strong>Author(s):</strong> Jessica Christie and Josefina Vásquez Pazmiño<br>
+<strong>Contact:</strong> <a href="mailto:christiej@ecu.edu">christiej@ecu.edu</a></p>
+<p>This paper explores contexts of the enigmatic avian cabezas-clavas/tenoned heads found at the Kañari-Inka site Ingapirka, Ecuador. We introduce the cabezas-clavas in their documented contexts. Then we analyze them as socially embedded, agentive, and ontologically evolving agents. They have been largely silenced in the public interpretation of Ingapirka presented as primarily Inka. Government ministries promote their most visited touristic site Ingapirka as “Inka” heritage shaping an Inka-derived national identity and de-prioritizing local archaeological data. Such nationalist discourse has contributed to a disconnect between contemporary descendants of the Kañari people and Kañari archaeological data. Cultural experts we interviewed were unaware of the cabezas-clavas. Most are also unaware of the very similar though badly damaged tenoned heads Dennis Ogburn found in the Saraguro region. While data to reconstruct Kañari-Saraguro and Kañari-Inka connections are limited, we can view the cabezas-clavas as ontologically dynamic; they evolve and grow in processes of reinterpretation and reevaluation. This is what we see with regard to bird iconography in contemporary Kañari fashion design, textiles, and jewelry, as well as ritual. The iconography of specific species becomes less relevant when we view art works as social agents whose meanings can shift and adjust in changing historical settings.</p>
+
+<h3>12:00–12:30 · Community, Conversion, and Cotopaxi: Religious Transformations in Mulalo, Ecuador</h3>
+<p class="byline"><strong>Author(s):</strong> Scotti M. Norman, Sara Juengst<br>
+<strong>Contact:</strong> <a href="mailto:snorman@warren-wilson.edu">snorman@warren-wilson.edu</a></p>
+<p>In 1534, the Ecuadorian volcano Cotopaxi violently erupted, sending clouds of fire and ash into the atmosphere that rained on local communities for weeks. In the days prior to this event, newly arrived Spanish conquistadors reported local peoples having visions, hearing voices, and otherwise predicting the arrival of the local deity. While Indigenous communities had incorporated local deities like Cotopaxi into their religious praxis for millennia, this 16th-century eruption was significant as it took place in the midst of the nearly simultaneous colonial invasions of Inka and Spanish peoples into the central Ecuadorian highlands. This paper outlines a new project that investigates the cultural, biological, and religious ramifications of three concurrent pachakutis (Quechua: world reversals) to ask how Indigenous communities in the shadow of Cotopaxi practiced resilience, adaptation, or change.</p>
+
+<h2>Session 3: Becoming Coastal: Maritime Foundations and Monumental Beginnings</h2>
+
+<h3>2:00–2:30 · Historically Contingent Ways of Becoming Coastal: Longotoma (North-Central Chile 32°24’ S) among the Andean Coastal Trajectories</h3>
+<p class="byline"><strong>Author(s):</strong> Daniel Hernández Castillo<br>
+<strong>Contact:</strong> <a href="mailto:dhernandez6@ufl.edu">dhernandez6@ufl.edu</a></p>
+<p>The Pacific coast of the Andes supported remarkably persistent coastal adaptations, yet they did not follow a single developmental trajectory along the region. This paper examines long-term changes in coastal behavior across the Andes by considering how the organization of subsistence, mobility, and coastal occupation changed as increasingly intensive relationships with marine environments developed. Particular attention is given to the hyperarid coastal deserts of the Central Andean coast, where early maritime adaptations progressively incorporated longer occupations and increasingly structured resource procurement and exchange, eventually contributing to the distinctive social trajectories of the Central Andean coast. These patterns are compared with research in Longotoma, north-central Chile, where productive marine environments supported similarly persistent coastal lifeways without producing the same configurations of settlement, specialization, or social organization. To facilitate comparison, I employ behavioral models that characterize coastal occupations through three intersecting dimensions whose combinations represent alternative ways of inhabiting coastal landscapes: assemblage diversity, scheduling or seasonality of mobility, and occupation duration. This framework emphasizes multiple coastal trajectories through which Andean communities reorganized adaptation around the opportunities and constraints of the Pacific coast, thus illustrating multiple historical alternatives of coastal social complexity.</p>
+
+<h3>2:30–3:00 · What Are Radiocarbon Dates Proxies For? MFAC and Dates-as-Data on the Peruvian Coast</h3>
+<p class="byline"><strong>Author(s):</strong> Daniel A. Contreras, Benjamin R. Vining, and Augusto Bazán<br>
+<strong>Contact:</strong> <a href="mailto:daniel.contreras@ufl.edu">daniel.contreras@ufl.edu</a></p>
+<p>Dates-as-data approaches, pioneered in the Central Andes, treat archaeological radiocarbon dates as proxies for population, reasoning that larger populations produce more dateable material and that date frequencies will reflect this greater abundance. Here we explore the corpus of radiocarbon dates from the north and central coasts of Peru (n &gt; 2400), using them to test an underappreciated proposition of Moseley’s MFAC hypothesis: that exploitation of terrestrial resources in the arable portions of coastal drainages lagged the population growth and increasingly complex social organization enabled by stability in marine resources.</p>
+<p>We subset the radiocarbon record in various ways to examine the effects of research and taphonomic biases, then examine Moseley’s proposals in light of an additional half century of accumulated evidence, and highlight in particular the implications of a burst of monumental construction in the Chicama Valley at the beginning of the 2nd millennium BCE.</p>
+
+<h3>3:15–3:45 · Unveiling San Jacinto: The Most Monumental U-Shaped Ritual Complex of Peru’s Central Coast (Second–First Millennium BC)</h3>
+<p class="byline"><strong>Author(s):</strong> Christian Cancho<br>
+<strong>Contact:</strong> <a href="mailto:cc2pa@virginia.edu">cc2pa@virginia.edu</a></p>
+<p>San Jacinto, located in the Chancay Valley, is the largest monument of the U-shaped ritual complex tradition that flourished along the central coast of Peru between the second and first millennia BC. Research conducted between 2023 and 2025, combining excavation, photogrammetry, and Geographic Information Systems (GIS), has documented a long and complex construction history characterized by the vertical and horizontal succession of superimposed buildings that reproduce earlier architectural designs, suggesting cycles of architectural renewal and social memory within complex ritual practices. Furthermore, recent excavations have shed light on the architectural design of the temple’s central atrium, connected by a system of superimposed stairways. These findings highlight San Jacinto not only as the most monumental example of this architectural tradition, but also as one of the longest-lived temples within the local Andean Formative sequence, making it a key site for understanding the construction practices and social dynamics of the period.</p>
+
+<h3>3:45–4:15 · Space, Time, and Form at the Moche Center of Dos Cabezas: Results of a Preliminary Project</h3>
+<p class="byline"><strong>Author(s):</strong> Connor Sutton, Jean Pool Nieves Cordova<br>
+<strong>Contact:</strong> <a href="mailto:connor.sutton@vanderbilt.edu">connor.sutton@vanderbilt.edu</a></p>
+<p>We present on how the results of a recent preliminary field project at Dos Cabezas speaks to open questions about the history of the Jequetepeque Valley and the emergence of the Moche archaeological culture.</p>
+
+</body>
+</html>
